@@ -1,10 +1,12 @@
-import styled from 'styled-components'
-
-const Title = styled.h1`
-  color: red;
-  font-size: 50px;
-`
+import Typography from "../src/components/Typography";
+import Head from "../src/infra/components/Head";
 
 export default function Home() {
-  return <Title>My page</Title>
+  return (
+    <div>
+      <Head title="Home" />
+      <header>Menu</header>
+      <Typography>Olá</Typography>
+    </div>
+  );
 }
